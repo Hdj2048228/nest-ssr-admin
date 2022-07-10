@@ -1,5 +1,5 @@
 {
-  "name": "kop-admin",
+  "name": "nest-ssr-admin",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
