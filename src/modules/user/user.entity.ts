@@ -38,7 +38,7 @@ export class User {
   phone: string
 
   @ApiProperty({ description: '商户id' })
-  @Column({ type: 'bigint', default: '' })
+  @Column({ type: 'bigint', default: -1 })
   merchant_id: number
 
   @ApiProperty({ enum: ZeroOneTrueFalseEnum, description: '是否完成注册公司信息 0 未完成， 1已完成' })
