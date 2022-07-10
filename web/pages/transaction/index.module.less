@@ -1,0 +1,23 @@
+.search-area {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.list-area {
+  .item {
+    border-right: 1px solid @line-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    &:last-of-type {
+      border: none;
+    }
+    .name {
+      color: @text-color-secondary;
+    }
+  }
+}

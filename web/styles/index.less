@@ -1,0 +1,49 @@
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+@tailwind screens;
+@import './utils';
+
+
+.app-content {
+  height: calc(100vh - 64px);
+}
+
+.app-sider {
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  z-index: 100;
+}
+
+.slide-in {
+  transition: all 0.3s ease;
+  transform: translateX(200px);
+  opacity: 0;
+}
+
+.slide-in-enter-done {
+  opacity: 1;
+  transform: translateX(0);
+}
+.slide-in-exit-done {
+  opacity: 0;
+  transform: translateX(200px);
+}
+
+
+.slide-out {
+  transition: all 0.3s ease;
+  transform: translateX(0);
+  opacity: 1;
+}
+.slide-out-enter-done {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+.slide-out-exit-done {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#react-refresh-overlay{
+  display: none;
+}
